@@ -1,8 +1,8 @@
-## In this project I will be implmenting web solutions deployment using LA(E)MP stacks. This stack uses the **NGNIX** web server.
+### In this project I will be implmenting web solutions deployment using LA(E)MP stacks. This stack uses the **NGNIX** web server ##.
 <br>
 
-## 1. Installing the *Ngnix* web server
-## The ***Ngnix*** is a high performance web server used to display web pages to site visitors. ##
+### 1. Installing the *Ngnix* web server
+### The ***Ngnix*** is a high performance web server used to display web pages to site visitors. 
 <br>
 
 - Update the server's package index and use the ***apt*** package manager to install ***nginx*** 
@@ -38,21 +38,29 @@ move to the last line and hit *q* botton on the keyboard to exit or *:* then *q*
     Nginx works well now
     ![update](./images/nginx_working.PNG)
 
-## 2. Installing ***MYSQL***
+### 2. Installing ***MYSQL***
 - Install *mysql* from apt manager
-![update](./images/mysql_install.PNG)
 <br>
 
-- Launch *mysql*
-![update](./images/mysql_launch.PNG)
+    ![update](./images/mysql_install.PNG)
+
+<br>
+
+- Launch *mysql* 
+<br>
+
+    ![update](./images/mysql_launch.PNG)
 <br>
 If you want more information about setting the password to *mysql* server, [click here](https://exerror.com/failed-error-set-password-has-no-significance-for-user-rootlocalhost-as-the-authentication-method-used-doesnt-store-authentication-data-in-the-mysql-server/)
 
 - here you run ***ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'mynewpassword';*** on *mysql* environment (***sudo mysql*** takes you there, after installation) 
+<br>
+
 ![update](./images/mysql_passwd.PNG)
 
-- Exit *mysql* window and run ***sudo mysql_secure_installation*** you'll be required to type the password you specified above (***mynewpassword***), then required to chabge it 
-![update](./images/password_1.PNG)
+- Exit *mysql* window and run ***sudo mysql_secure_installation*** you'll be required to type the password you specified above (***mynewpassword***), then required to chabge it.
+
+    <br>![update](./images/password_1.PNG)
 
 
 - Proceed to make the following change
@@ -61,11 +69,13 @@ Then ***exit*** *mysql*
 
 - Load *mysql* with the *p* tag i.e ***sudo mysql -p*** <br>
 then input your password
-![update](./images/mysql_load.PNG)
+<br>
+
+    ![update](./images/mysql_load.PNG)
 
 <br>
 
-## 3. Install *PHP* for *NGINX* server
+### 3. Install *PHP* for *NGINX* server
 You will need to install "PHP fastCGI process manager" (***php-fpm***) which is an external program that handles *PHP* processing and acts as a bridge between *PHP* interpreter itself and the *Nginx* web server. While *Apahe* embeds the *PHP* interpreter in each request, the *Nginx* requires this external program. 
 
 <br>
@@ -74,7 +84,7 @@ You will need to install "PHP fastCGI process manager" (***php-fpm***) which is 
 
 <br>
 
-## 4. Configure *NGINX* to use *PHP* processor
+### 4. Configure *NGINX* to use *PHP* processor
 - Create a new domain <br>
 Just as with the Apache server, we can create server blocks (virtual hosts) to encapsulate configuration details and host more than one domain on a single Nginx server. By default Nginx has one server block enabled and configured to serve documents out of a directory */var/www/html* This works well for a single site and becomes difficult to manage if we are hosting multiple sites. Here we create a new domain, ***projectLEMP*** (i.e. a root web directory and assign ownership).<br>
 
@@ -111,7 +121,7 @@ Just as with the Apache server, we can create server blocks (virtual hosts) to e
     <br>
 
 
-## 5. Testing *PHP* with *NGINX*
+### 5. Testing *PHP* with *NGINX*
 -   Here we want to test that *Nginx* can corretly hand *.php* files off to your *PHP* processor. and we do this by creating a test *php* file in the document root 
 
 
