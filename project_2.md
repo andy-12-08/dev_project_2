@@ -26,9 +26,9 @@ move to the last line and hit *q* botton on the keyboard to exit or *:* then *q*
 
 
 
-    ### This was very helpful:
-    ### I mistakenly killed a process running on a port on my linux server, this link helped me resumed it 
-    [click here](https://ostechnix.com/suspend-process-resume-later-linux/)
+### This was very helpful:
+### I mistakenly killed a process running on a port on my linux server, this link helped me resumed it 
+[click here](https://ostechnix.com/suspend-process-resume-later-linux/)
 
     [for some more details click here](https://www.ibm.com/docs/en/aix/7.1?topic=processes-restarting-stopped-process)
 <br>
