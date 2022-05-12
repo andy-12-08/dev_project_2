@@ -1,4 +1,4 @@
-### In this project I will be implmenting web solutions deployment using LA(E)MP stacks. This stack uses the **NGNIX** web server ##.
+### In this project I will be implmenting web solutions deployment using LA(E)MP stacks. This stack uses the **NGNIX** web server.
 <br>
 
 ### 1. Installing the *Ngnix* web server
