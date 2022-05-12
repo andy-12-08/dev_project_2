@@ -30,28 +30,31 @@ move to the last line and hit *q* botton on the keyboard to exit or *:* then *q*
 ### I mistakenly killed a process running on a port on my linux server, this link helped me resumed it 
 [click here](https://ostechnix.com/suspend-process-resume-later-linux/)
 
-    [for some more details click here](https://www.ibm.com/docs/en/aix/7.1?topic=processes-restarting-stopped-process)
+[for some more details click here](https://www.ibm.com/docs/en/aix/7.1?topic=processes-restarting-stopped-process)
 <br>
 
-    I had to re-create another EC2 instance to install *nginx* web server, beacuse I had some challenges on getting it to work properly on the server which had apache2 pre-installed.
+I had to re-create another EC2 instance to install *nginx* web server, beacuse I had some challenges on getting it to work properly on the server which had apache2 pre-installed.
 
-    Nginx works well now
-    ![update](./images/nginx_working.PNG)
+Nginx works well now
+![update](./images/nginx_working.PNG)
 
 ### 2. Installing ***MYSQL***
 - Install *mysql* from apt manager
 <br>
 
-    ![update](./images/mysql_install.PNG)
+![update](./images/mysql_install.PNG)
 
 <br>
 
 - Launch *mysql* 
 <br>
 
-    ![update](./images/mysql_launch.PNG)
+![update](./images/mysql_launch.PNG)
 <br>
-If you want more information about setting the password to *mysql* server, [click here](https://exerror.com/failed-error-set-password-has-no-significance-for-user-rootlocalhost-as-the-authentication-method-used-doesnt-store-authentication-data-in-the-mysql-server/)
+
+If you want more information about setting the password to *mysql* server
+[click here](https://exerror.com/
+failed-error-set-password-has-no-significance-for-user-rootlocalhost-as-the-authentication-method-used-doesnt-store-authentication-data-in-the-mysql-server/)
 
 - here you run ***ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'mynewpassword';*** on *mysql* environment (***sudo mysql*** takes you there, after installation) 
 <br>
@@ -59,8 +62,9 @@ If you want more information about setting the password to *mysql* server, [clic
 ![update](./images/mysql_passwd.PNG)
 
 - Exit *mysql* window and run ***sudo mysql_secure_installation*** you'll be required to type the password you specified above (***mynewpassword***), then required to chabge it.
+<br>
 
-    <br>![update](./images/password_1.PNG)
+![update](./images/password_1.PNG)
 
 
 - Proceed to make the following change
