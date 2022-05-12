@@ -35,7 +35,8 @@ move to the last line and hit *q* botton on the keyboard to exit or *:* then *q*
 
 I had to re-create another EC2 instance to install *nginx* web server, beacuse I had some challenges on getting it to work properly on the server which had apache2 pre-installed.
 
-Nginx works well now
+Nginx works well now <br>
+
 ![update](./images/nginx_working.PNG)
 
 ### 2. Installing ***MYSQL***
