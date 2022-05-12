@@ -67,6 +67,8 @@ Nginx works well now <br>
 
 
 - Proceed to make the following change
+<br>
+
 ![update](./images/password_2.PNG) 
 <br>
 Then ***exit*** *mysql*
