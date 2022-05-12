@@ -52,9 +52,7 @@ Nginx works well now
 ![update](./images/mysql_launch.PNG)
 <br>
 
-If you want more information about setting the password to *mysql* server
-[click here](https://exerror.com/
-failed-error-set-password-has-no-significance-for-user-rootlocalhost-as-the-authentication-method-used-doesnt-store-authentication-data-in-the-mysql-server/)
+- If you want more information about setting the password to *mysql* server [click here](https://exerror.com/failed-error-set-password-has-no-significance-for-user-rootlocalhost-as-the-authentication-method-used-doesnt-store-authentication-data-in-the-mysql-server/)
 
 - here you run ***ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'mynewpassword';*** on *mysql* environment (***sudo mysql*** takes you there, after installation) 
 <br>
