@@ -68,14 +68,15 @@ failed-error-set-password-has-no-significance-for-user-rootlocalhost-as-the-auth
 
 
 - Proceed to make the following change
-![update](./images/password_2.PNG)
+![update](./images/password_2.PNG) 
+<br>
 Then ***exit*** *mysql*
 
 - Load *mysql* with the *p* tag i.e ***sudo mysql -p*** <br>
 then input your password
 <br>
 
-    ![update](./images/mysql_load.PNG)
+![update](./images/mysql_load.PNG)
 
 <br>
 
