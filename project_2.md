@@ -127,5 +127,87 @@ Just as with the Apache server, we can create server blocks (virtual hosts) to e
     <br>
 
 
-### 5. Testing *PHP* with *NGINX*
--   Here we want to test that *Nginx* can corretly hand *.php* files off to your *PHP* processor. and we do this by creating a test *php* file in the document root 
+### 5.   Testing *PHP* with *NGINX*
+- Here we want to test that *Nginx* can corretly hand *.php* files off to your *PHP* processor. and we do this by creating a test *php* file in the document root
+
+<br>
+
+![php](./images/php_info.PNG)
+
+<br>
+
+- This file should contain the info below:<br>
+*<?php <br>
+phpinfo();*
+
+<br>
+This page can be accessed on our web browser by using the domain name or public IP address followed by  */info.php*
+
+<br>
+
+![php](./images/php_test.PNG)
+
+<br>
+Note that it is best practice to delete your *php* file
+
+<br>
+
+### 6. Retrieving Data from MYSQL Database with PHP <br>
+- Here we will create a database and configure access to it, so that the Nginx website would be able to query data from the DB and display it. <br>
+- Create database named ***example_database*** and a user named ***example_user*** ( using ***mysql_native_password*** as default authentication method, where we define this user's password as ***password*** ) and give this users permission over the ***example_database*** (this will give the ***example_user*** full privileges over the ***example_database*** , while preventing this user from creating or modifying other databases on your server) 
+
+<br>
+
+![database](./images/create_database.PNG)
+
+<br>
+
+- Log into *MySQL* as this user (using the *-u* tag) and confirm access to the ***example_database*** database . 
+
+<br>
+
+![database](./images/database_login.PNG)
+<br>
+
+- Create a table ***todo_list***. Note that *SQL* syntax are not case sensitive 
+<br>
+
+![database](./images/mysql_table_2.PNG)
+<br>
+ 
+ - Notice that in the creation of your tables, you specify the column names and when you insert rows (data), you mention the column name in which the data goes into. For more MySQL lessons, [click here](https://www.youtube.com/playlist?list=PLS1QulWo1RIY4auvfxAHS9m_fZJ2wxSse) 
+ For SQL documentation [click here](https://www.w3schools.com/sql/sql_create_table.asp)<br>
+
+ - Insert rows into your tables 
+ <br>
+
+ ![tables](./images/mysql_insert.PNG)
+<br>
+- Next we Create a *php* script that will connect *MySQL* database and query for the content of the ***todo_list*** table and help displays the result as a list, on the website. <br>
+
+ ![tables](./images/todo_list.PNG)
+<br>
+
+[content of the todo_list.php ](https://www.darey.io/docs/step-6-retrieving-data-from-mysql-database-with-php-continued-2/) <br>
+
+- The content will display on your browser as shown below:
+<br>
+
+![tables](./images/todo.PNG)
+
+<br>
+
+- This means the ***PHP*** environment is ready to interact with MySQL server.
+
+<br>
+
+In this project I have successfully built a flexible foundation for serving *PHP* websites and applications to visitors, using *Nginx* as wed server and *MySQL* as database management system. 
+
+
+
+
+
+
+
+
+
